@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Marvy.Sol — Collab Manager & Alpha Hunter</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ===================== PRELOADER ===================== -->
+  <div id="preloader">
+    <div class="preloader-inner">
+      <div class="preloader-pfp-wrap">
+        <img src="images/marvypfp.png" alt="Marvy.Sol" class="preloader-pfp" />
+        <div class="preloader-ring ring-1"></div>
+        <div class="preloader-ring ring-2"></div>
+        <div class="preloader-ring ring-3"></div>
+      </div>
+      <div class="preloader-text">
+        <span class="preloader-name">MARVY<span class="dot-sol">.SOL</span></span>
+        <div class="preloader-bar-wrap">
+          <div class="preloader-bar" id="preloaderBar"></div>
+        </div>
+        <span class="preloader-sub" id="preloaderSub">Initializing...</span>
+      </div>
+    </div>
+    <div class="scanline"></div>
+  </div>
+
+  <!-- ===================== REACH ME (floating) ===================== -->
+  <div class="reach-me-float" id="reachFloat">
+    <div class="reach-arrow-wrap">
+      <svg class="reach-arrow-svg" viewBox="0 0 40 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M20 4 C20 4 6 20 20 32 C34 44 20 56 20 56" stroke="#e63946" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+        <path d="M12 48 L20 58 L28 48" stroke="#e63946" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      </svg>
+    </div>
+    <a href="#contact" class="reach-me-btn">REACH ME</a>
+  </div>
+
+  <!-- ===================== NAV ===================== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <img src="images/marvypfp.png" alt="logo" class="nav-pfp" />
+      <span>MARVY<span class="accent-red">.SOL</span></span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav-hamburger" id="navHamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <div class="nav-mobile-menu" id="navMobileMenu">
+    <ul>
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="#projects" class="mobile-link">Projects</a></li>
+      <li><a href="#reviews" class="mobile-link">Reviews</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="home">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-scanline-h"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow fade-up">Web3 Professional</p>
+      <h1 class="hero-title fade-up delay-1">
+        <span class="hero-name-line">MARVY</span>
+        <span class="hero-name-line accent-red">.SOL</span>
+      </h1>
+      <div class="hero-roles fade-up delay-2">
+        <span class="role-pill">Collab Manager</span>
+        <span class="role-divider">✦</span>
+        <span class="role-pill">Alpha Hunter</span>
+      </div>
+      <p class="hero-bio fade-up delay-3">
+        Experienced Collaboration Manager with a strong track record in building<br class="br-desktop"/>
+        strategic partnerships, fostering cross-functional teamwork, and driving<br class="br-desktop"/>
+        successful collaborations across the Web3 ecosystem.
+      </p>
+      <div class="hero-cta-row fade-up delay-4">
+        <a href="#projects" class="btn-primary">View Projects</a>
+        <a href="#contact" class="btn-outline">Get In Touch</a>
+      </div>
+      <div class="hero-stats fade-up delay-5">
+        <div class="stat-item">
+          <span class="stat-num">3+</span>
+          <span class="stat-label">Years in Web3</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num">60+</span>
+          <span class="stat-label">Projects Sold Out</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num">19</span>
+          <span class="stat-label">Collaborations</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-pfp-wrap fade-up delay-2">
+      <div class="hero-pfp-glow"></div>
+      <img src="images/marvypfp.png" alt="Marvy.Sol" class="hero-pfp" />
+      <div class="hero-pfp-ring r1"></div>
+      <div class="hero-pfp-ring r2"></div>
+    </div>
+  </section>
+
+  <!-- ===================== CV DOWNLOAD BANNER ===================== -->
+  <section class="cv-banner">
+    <div class="container cv-banner-inner">
+      <div class="cv-banner-left">
+        <div class="cv-icon">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="28" height="28">
+            <path d="M14 2H6C5.46957 2 4.96086 2.21071 4.58579 2.58579C4.21071 2.96086 4 3.46957 4 4V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V8L14 2Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M14 2V8H20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M16 13H8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M16 17H8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M10 9H9H8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="cv-banner-text">
+          <p class="cv-banner-label">Professional Resume</p>
+          <h3 class="cv-banner-title">Download My CV</h3>
+          <p class="cv-banner-sub">Full overview of my experience, skills & collab portfolio</p>
+        </div>
+      </div>
+      <a href="marvy_sol_cv.pdf" download="MarvySol_CV.pdf" class="btn-download-cv">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="18" height="18">
+          <path d="M12 15L12 3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <path d="M7 11L12 16L17 11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M3 19H21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        Download CV
+      </a>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section class="about section-gap" id="about">
+    <div class="container">
+      <div class="section-label">WHO IS MARVY</div>
+      <h2 class="section-title">About <span class="accent-red">Me</span></h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I'm a professional Collab Manager and Alpha Hunter operating deep in the Web3 ecosystem.
+            With over <strong>3 years</strong> of experience, I've built and maintained strategic partnerships
+            across NFT projects, DAOs, Memecoins, and DeFi communities.
+          </p>
+          <p>
+            Skilled in negotiation, project management, and aligning partnerships with business objectives
+            to maximize growth and impact. Adept at managing stakeholder relationships and ensuring
+            seamless communication between teams.
+          </p>
+          <div class="skills-grid">
+            <div class="skill-tag">Partnership Development</div>
+            <div class="skill-tag">Web3 & Blockchain</div>
+            <div class="skill-tag">Community Engagement</div>
+            <div class="skill-tag">Influencer Relations</div>
+            <div class="skill-tag">Negotiation & Deal Making</div>
+            <div class="skill-tag">Social Media & Marketing</div>
+            <div class="skill-tag">Trend Analysis</div>
+            <div class="skill-tag">AMA Coordination</div>
+            <div class="skill-tag">Alpha Research</div>
+          </div>
+        </div>
+        <div class="about-card">
+          <div class="about-card-inner">
+            <img src="images/marvypfp.png" alt="Marvy.Sol" class="about-pfp" />
+            <div class="about-card-info">
+              <h3>!MARVY.SOL</h3>
+              <p class="about-card-role">Collab Manager · Alpha Hunter</p>
+              <div class="about-langs">
+                <span>🌐 English (Fluent)</span>
+                <span>🌐 French (Basic)</span>
+                <span>🌐 Spanish (Basic)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROJECTS: COLLAB MANAGER ===================== -->
+  <section class="projects section-gap" id="projects">
+    <div class="container">
+      <div class="section-label">PORTFOLIO</div>
+      <h2 class="section-title">Projects <span class="accent-red">Worked On</span></h2>
+
+      <!-- COLLAB MANAGER TAB -->
+      <div class="projects-category">
+        <div class="category-header">
+          <span class="category-badge badge-red">Collab Manager</span>
+          <div class="category-line"></div>
+        </div>
+        <div class="projects-grid">
+
+          <a href="https://x.com/twerk_xyz?s=21" target="_blank" rel="noopener" class="project-card has-link">
+            <div class="project-img-wrap">
+              <img src="projects/twerkdao.png" alt="$Twerk" loading="lazy"/>
+              <div class="project-link-badge">𝕏</div>
+            </div>
+            <p class="project-name">$Twerk</p>
+          </a>
+
+          <a href="https://x.com/degenalphaxyz?s=21" target="_blank" rel="noopener" class="project-card has-link">
+            <div class="project-img-wrap">
+              <img src="projects/degenalphadao.png" alt="Degen Alpha" loading="lazy"/>
+              <div class="project-link-badge">𝕏</div>
+            </div>
+            <p class="project-name">Degen Alpha</p>
+          </a>
+
+          <div class="project-card">
+            <div class="project-img-wrap">
+              <img src="projects/clout.png" alt="$CLOUT" loading="lazy"/>
+            </div>
+            <p class="project-name">$CLOUT</p>
+          </div>
+
+          <a href="https://x.com/roachracingclub?s=21" target="_blank" rel="noopener" class="project-card has-link">
+            <div class="project-img-wrap">
+              <img src="projects/roachracingclub.png" alt="Roach Racing Club" loading="lazy"/>
+              <div class="project-link-badge">𝕏</div>
+            </div>
+            <p class="project-name">Roach Racing Club</p>
+          </a>
+
+          <a href="https://x.com/monalotls?s=21" target="_blank" rel="noopener" class="project-card has-link">
+            <div class="project-img-wrap">
+              <img src="projects/monalotls.png" alt="Monalotls" loading="lazy"/>
+              <div class="project-link-badge">𝕏</div>
+            </div>
+            <p class="project-name">Monalotls</p>
+          </a>
+
+          <a href="https://x.com/nigirinekotoken?s=21" target="_blank" rel="noopener" class="project-card has-link">
+            <div class="project-img-wrap">
+              <img src="projects/nigirineko.png" alt="$NEKO NigiriNeko" loading="lazy"/>
+              <div class="project-link-badge">𝕏</div>
+            </div>
+            <p class="project-name">$NEKO NigiriNeko</p>
+          </a>
+
+          <a href="https://x.com/shinirealms?s=21" target="_blank" rel="noopener" class="project-card has-link">
+            <div class="project-img-wrap">
+              <img src="projects/shinigami.png" alt="SHINIGAMI" loading="lazy"/>
+              <div class="project-link-badge">𝕏</div>
+            </div>
+            <p class="project-name">SHINIGAMI</p>
+          </a>
+
+          <a href="https://x.com/britbulldogsnft?s=21" target="_blank" rel="noopener" class="project-card has-link">
+            <div class="project-img-wrap">
+              <img src="projects/britishbulldogsnft.png" alt="British Bulldogs NFT" loading="lazy"/>
+              <div class="project-link-badge">𝕏</div>
+            </div>
+            <p class="project-name">British Bulldogs NFT</p>
+          </a>
+
+          <a href="https://x.com/pocket_sol?s=21" target="_blank" rel="noopener" class="project-card has-link">
+            <div class="project-img-wrap">
+              <img src="projects/pocketsol.png" alt="Pocket Sol" loading="lazy"/>
+              <div class="project-link-badge">𝕏</div>
+            </div>
+            <p class="project-name">Pocket Sol</p>
+          </a>
+
+          <a href="https://x.com/doomons_on_sol?s=21" target="_blank" rel="noopener" class="project-card has-link">
+            <div class="project-img-wrap">
+              <img src="projects/doom.png" alt="Doom" loading="lazy"/>
+              <div class="project-link-badge">𝕏</div>
+            </div>
+            <p class="project-name">Doom</p>
+          </a>
+
+          <a href="https://x.com/cryptkingclaws?s=21" target="_blank" rel="noopener" class="project-card has-link">
+            <div class="project-img-wrap">
+              <img src="projects/cryptkingclaws.png" alt="Cryptking Claws" loading="lazy"/>
+              <div class="project-link-badge">𝕏</div>
+            </div>
+            <p class="project-name">Cryptking Claws</p>
+          </a>
+
+          <a href="https://x.com/btcordinal?s=21" target="_blank" rel="noopener" class="project-card has-link">
+            <div class="project-img-wrap">
+              <img src="projects/nexabyte.png" alt="Nexabyte" loading="lazy"/>
+              <div class="project-link-badge">𝕏</div>
+            </div>
+            <p class="project-name">Nexabyte</p>
+          </a>
+
+          <a href="https://x.com/d1srupt0rs?s=21" target="_blank" rel="noopener" class="project-card has-link">
+            <div class="project-img-wrap">
+              <img src="projects/d1srupt0rs.png" alt="D1srupt0rs" loading="lazy"/>
+              <div class="project-link-badge">𝕏</div>
+            </div>
+            <p class="project-name">D1srupt0rs</p>
+          </a>
+
+        </div>
+      </div>
+
+      <!-- ALPHA HUNTER TAB -->
+      <div class="projects-category" style="margin-top: 64px;">
+        <div class="category-header">
+          <span class="category-badge badge-gold">Alpha Hunter</span>
+          <div class="category-line"></div>
+        </div>
+        <div class="projects-grid">
+
+          <a href="https://x.com/sukunadao?s=21" target="_blank" rel="noopener" class="project-card has-link">
+            <div class="project-img-wrap">
+              <img src="projects/sukunadao.png" alt="Sukuna DAO" loading="lazy"/>
+              <div class="project-link-badge">𝕏</div>
+            </div>
+            <p class="project-name">Sukuna DAO</p>
+          </a>
+
+          <a href="https://x.com/justnftsdao11?s=21" target="_blank" rel="noopener" class="project-card has-link">
+            <div class="project-img-wrap">
+              <img src="projects/justnftdao.png" alt="JustNfT DAO" loading="lazy"/>
+              <div class="project-link-badge">𝕏</div>
+            </div>
+            <p class="project-name">JustNfT DAO</p>
+          </a>
+
+          <a href="https://x.com/zeendao?s=21" target="_blank" rel="noopener" class="project-card has-link">
+            <div class="project-img-wrap">
+              <img src="projects/zeendao.png" alt="Zeen DAO" loading="lazy"/>
+              <div class="project-link-badge">𝕏</div>
+            </div>
+            <p class="project-name">Zeen DAO</p>
+          </a>
+
+          <a href="https://discord.gg/MbeH8Wxzfx" target="_blank" rel="noopener" class="project-card has-link">
+            <div class="project-img-wrap">
+              <img src="projects/spongedao.png" alt="SpongeBob DAO" loading="lazy"/>
+              <div class="project-link-badge discord-badge">DC</div>
+            </div>
+            <p class="project-name">SpongeBob DAO</p>
+          </a>
+
+          <a href="https://x.com/web3_whatt?s=21" target="_blank" rel="noopener" class="project-card has-link">
+            <div class="project-img-wrap">
+              <img src="projects/whattdao.png" alt="Whatt DAO" loading="lazy"/>
+              <div class="project-link-badge">𝕏</div>
+            </div>
+            <p class="project-name">Whatt DAO</p>
+          </a>
+
+          <a href="https://x.com/cold_alphaa?s=21" target="_blank" rel="noopener" class="project-card has-link">
+            <div class="project-img-wrap">
+              <img src="projects/coldalpha.png" alt="Cold Alpha DAO" loading="lazy"/>
+              <div class="project-link-badge">𝕏</div>
+            </div>
+            <p class="project-name">Cold Alpha DAO</p>
+          </a>
+
+          <a href="https://x.com/infinityyalpha?s=21" target="_blank" rel="noopener" class="project-card has-link">
+            <div class="project-img-wrap">
+              <img src="projects/infinityalpha.png" alt="Infinity Alpha" loading="lazy"/>
+              <div class="project-link-badge">𝕏</div>
+            </div>
+            <p class="project-name">Infinity Alpha</p>
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== REVIEWS ===================== -->
+  <section class="reviews-section section-gap" id="reviews">
+    <div class="container">
+      <div class="section-label">SOCIAL PROOF</div>
+      <h2 class="section-title">What People <span class="accent-red">Say</span></h2>
+      <p class="section-sub">Trusted by builders, founders & communities across the Web3 space.</p>
+
+      <div class="reviews-masonry" id="reviewsMasonry">
+        <!-- Reviews 1–7 shown on main page -->
+        <div class="review-img-wrap"><img src="reviews/review_1.png" alt="Review 1" loading="lazy"/></div>
+        <div class="review-img-wrap"><img src="reviews/review_2.png" alt="Review 2" loading="lazy"/></div>
+        <div class="review-img-wrap"><img src="reviews/review_3.png" alt="Review 3" loading="lazy"/></div>
+        <div class="review-img-wrap"><img src="reviews/review_4.png" alt="Review 4" loading="lazy"/></div>
+        <div class="review-img-wrap"><img src="reviews/review_5.png" alt="Review 5" loading="lazy"/></div>
+        <div class="review-img-wrap"><img src="reviews/review_6.png" alt="Review 6" loading="lazy"/></div>
+        <div class="review-img-wrap"><img src="reviews/review_7.png" alt="Review 7" loading="lazy"/></div>
+      </div>
+
+      <div class="reviews-cta-row">
+        <a href="testimonials.html" class="btn-reviews">
+          View All Reviews
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="18" height="18">
+            <path d="M5 12H19M13 6L19 12L13 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section class="contact section-gap" id="contact">
+    <div class="container contact-container">
+      <div class="section-label">LET'S WORK</div>
+      <h2 class="section-title">Get In <span class="accent-red">Touch</span></h2>
+      <p class="section-sub">Ready to collab? Reach out on any of these platforms.</p>
+
+      <div class="contact-cards">
+        <a href="https://x.com/marvysol0" target="_blank" rel="noopener" class="contact-card">
+          <div class="contact-icon x-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.264 5.636L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77z"/>
+            </svg>
+          </div>
+          <div class="contact-info">
+            <span class="contact-platform">X (Twitter)</span>
+            <span class="contact-handle">@marvysol0</span>
+          </div>
+          <div class="contact-arrow">→</div>
+        </a>
+
+        <a href="https://t.me/marvysoll" target="_blank" rel="noopener" class="contact-card preferred">
+          <div class="preferred-badge">Preferred</div>
+          <div class="contact-icon tg-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+              <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12L7.793 14.08l-2.96-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.836.95l-.441.529z"/>
+            </svg>
+          </div>
+          <div class="contact-info">
+            <span class="contact-platform">Telegram</span>
+            <span class="contact-handle">@marvysoll</span>
+          </div>
+          <div class="contact-arrow">→</div>
+        </a>
+
+        <a href="https://discord.gg/k3fXaZNx" target="_blank" rel="noopener" class="contact-card preferred">
+          <div class="preferred-badge">Preferred</div>
+          <div class="contact-icon dc-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+              <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03z"/>
+            </svg>
+          </div>
+          <div class="contact-info">
+            <span class="contact-platform">Discord</span>
+            <span class="contact-handle">Marvysol</span>
+          </div>
+          <div class="contact-arrow">→</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">
+          <img src="images/marvypfp.png" alt="Marvy.Sol" />
+          <span>MARVY<span class="accent-red">.SOL</span></span>
+        </div>
+        <p class="footer-copy">© 2025 Marvy.Sol · Collab Manager & Alpha Hunter · All rights reserved.</p>
+        <div class="footer-socials">
+          <a href="https://x.com/marvysol0" target="_blank" rel="noopener" aria-label="X">𝕏</a>
+          <a href="https://t.me/marvysoll" target="_blank" rel="noopener" aria-label="Telegram">✈</a>
+          <a href="https://discord.gg/k3fXaZNx" target="_blank" rel="noopener" aria-label="Discord">DC</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
