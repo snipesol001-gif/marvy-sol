@@ -1217,3 +1217,21 @@ ul { list-style: none; }
     transition-duration: 0.01ms !important;
   }
 }
+
+.more-card {
+  border: 1.5px dashed rgba(230,57,70,0.4);
+  cursor: default;
+}
+.more-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--red-dim);
+  border-color: var(--red) !important;
+}
+.more-img span {
+  font-family: var(--font-head);
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--red);
+}
